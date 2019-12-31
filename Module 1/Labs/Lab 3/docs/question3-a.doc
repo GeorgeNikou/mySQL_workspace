@@ -1,0 +1,2 @@
+# List all the female dogs and the oldest turtle (name, sex, specie, dob). 
+SELECT name, sex, species, dob FROM animals WHERE (species='dog' AND sex='F') OR (species='turtle') ORDER BY dob DESC LIMIT 1;

@@ -1,0 +1,3 @@
+# Change all the "NULL" comments to "To Come"!
+UPDATE animals SET comments = 'To Come!' WHERE comments IS NULL;
+SELECT * FROM animals;

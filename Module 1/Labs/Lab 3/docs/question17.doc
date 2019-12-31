@@ -1,0 +1,4 @@
+# Surprise me with a cool query!
+SELECT * FROM animals;
+UPDATE animals SET comments = "Sweet 'Ol" WHERE name = 'Caroline';
+SELECT comments, name FROM animals WHERE (name LIKE 'Ca%' AND sex = 'F' AND dob = '2008-12-06 05:18:00');

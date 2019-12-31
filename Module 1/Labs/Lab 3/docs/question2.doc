@@ -1,0 +1,2 @@
+# List all the female cats and female dogs.
+SELECT * FROM animals WHERE (species = 'cat' AND sex = 'F') OR (species = 'dog' AND sex = 'F');

@@ -1,0 +1,2 @@
+# List the 7 youngest animals (name, dob).
+SELECT name, dob FROM  animals ORDER BY dob DESC LIMIT 7;

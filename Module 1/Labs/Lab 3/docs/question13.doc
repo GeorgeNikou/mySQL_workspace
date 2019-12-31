@@ -1,0 +1,7 @@
+# Update all the "perrot" to "parrot".
+UPDATE animals SET species = 'perrot'  WHERE species = 'parrot';
+SELECT * FROM animals WHERE species = 'perrot';
+
+# HEADS UP! changing it back to parrot from perrot
+UPDATE animals SET species = 'parrot'  WHERE species = 'perrot';
+SELECT * FROM animals WHERE species = 'parrot';

@@ -1,0 +1,2 @@
+# List all the female cats born between 2007 and 2009.
+SELECT * FROM  animals WHERE (species = 'cat' AND sex = 'F') AND (dob >= '2007-31-12' AND dob <= '2009-31-12');

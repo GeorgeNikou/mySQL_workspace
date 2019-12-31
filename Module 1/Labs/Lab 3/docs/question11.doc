@@ -1,0 +1,2 @@
+# List all the animals who's name ends with e and was born in 2009 and who's not a male.
+SELECT * FROM animals WHERE name LIKE '%e' AND dob < '2009-31-12' AND dob > '2009-01-01' AND sex != 'M';

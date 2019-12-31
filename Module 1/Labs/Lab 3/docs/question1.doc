@@ -1,0 +1,6 @@
+CREATE DATABASE herzing;
+USE herzing;
+SELECT * FROM  animals;
+
+# List all the cat and male turtles.
+SELECT * FROM animals WHERE species='cat' OR (species='turtle' AND sex='M');

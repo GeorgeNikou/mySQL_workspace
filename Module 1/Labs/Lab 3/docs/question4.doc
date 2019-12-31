@@ -1,0 +1,2 @@
+# List the animals born in 2007 (specie, name and date of birth).
+SELECT species, name, dob FROM  animals WHERE dob <= '2007-31-12' AND dob >= '2007-01-01';

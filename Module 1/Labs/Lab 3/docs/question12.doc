@@ -1,0 +1,2 @@
+# List of 3 female turtles sort  their name from z-a.
+SELECT * FROM animals WHERE (species = 'turtle' AND sex = 'F') AND name IS NOT NULL ORDER BY name ASC LIMIT 3;

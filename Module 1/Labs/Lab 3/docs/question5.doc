@@ -1,0 +1,2 @@
+# List the animals with any comments attached to their name (name, specie, comments).
+SELECT name, species, comments FROM animals WHERE comments IS NOT NULL;

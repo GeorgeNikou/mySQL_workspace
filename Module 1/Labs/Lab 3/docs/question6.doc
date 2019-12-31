@@ -1,0 +1,2 @@
+# List the 7 oldest animals (name, specie, date of birth).
+SELECT name, species, dob FROM animals ORDER BY dob ASC LIMIT 7;

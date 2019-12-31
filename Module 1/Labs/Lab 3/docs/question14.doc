@@ -1,0 +1,12 @@
+# List of the animal called 'Bouli', parrot with comments and all the female born before 2008 (name, sex).
+SELECT 
+    name, sex
+FROM
+    animals
+WHERE
+    (name = 'bouli')
+        OR (species = 'parrot'
+        AND comments IS NOT NULL)
+        OR (sex = 'F' AND dob < '2008-31-12')
+;
+SELECT * FROM animals;

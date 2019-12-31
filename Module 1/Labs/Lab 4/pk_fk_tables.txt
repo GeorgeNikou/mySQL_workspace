@@ -1,0 +1,48 @@
+# creates species table
+CREATE TABLE `species` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `current_name` varchar(100) DEFAULT NULL,
+  `latin_name` varchar(100) DEFAULT NULL,
+  `description` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1
+
+
+
+# animals table
+CREATE TABLE `animals` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `sex` char(1) DEFAULT NULL,
+  `dob` datetime NOT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  `comments` text,
+  `species_id` int(10) unsigned NOT NULL,
+  `race_id` int(10) unsigned DEFAULT NULL,
+  `mother_id` smallint(5) unsigned DEFAULT NULL,
+  `father_id` smallint(5) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ind_name` (`name`,`species_id`),
+  KEY `species_id` (`species_id`),
+  KEY `race_id` (`race_id`),
+  KEY `mother_id` (`mother_id`),
+  KEY `father_id` (`father_id`),
+  CONSTRAINT `animals_ibfk_1` FOREIGN KEY (`species_id`) REFERENCES `species` (`id`),
+  CONSTRAINT `animals_ibfk_2` FOREIGN KEY (`race_id`) REFERENCES `races` (`id`),
+  CONSTRAINT `animals_ibfk_3` FOREIGN KEY (`mother_id`) REFERENCES `animals` (`id`),
+  CONSTRAINT `animals_ibfk_4` FOREIGN KEY (`father_id`) REFERENCES `animals` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8
+
+
+
+# create races table
+CREATE TABLE `races` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `species_id` int(10) unsigned DEFAULT NULL,
+  `description` text,
+  PRIMARY KEY (`id`),
+  KEY `fk_specie` (`species_id`),
+  CONSTRAINT `fk_specie` FOREIGN KEY (`species_id`) REFERENCES `species` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1
+
+
