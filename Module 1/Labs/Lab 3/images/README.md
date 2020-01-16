@@ -1,4 +1,4 @@
-## Basic Querie Questions
+## Basic Query Questions
 1. list all the cats and male turtles
 1. list all the female cats and dogs
 1. list all the female dogs and the oldest turtle (name, sex, species, dob)
