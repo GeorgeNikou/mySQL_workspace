@@ -29,8 +29,8 @@ A. Easily over 35 hours, considering some days I spent nearly 9 hours working on
 
 Q. What did you think was difficult but proved to be easy/easier?
 
-A. Seeing as how I havent create an actual relational database from scratch since the first module, 
-   I assumed it was going to be hard but was only a tedius task. 
+A. I havent created an actual relational database from scratch since the first module, 
+   so I obviously assumed it was going to be hard but was only a tedius task. 
 
 Q. What did you not finish or remains incomplete?
 
